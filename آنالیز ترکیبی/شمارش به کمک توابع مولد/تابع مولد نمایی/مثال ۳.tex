@@ -1,0 +1,38 @@
+\begin{problem}
+    فرض کنید 
+    $a_{n}$
+    تعداد اعداد 
+    $n$
+    رقمی در مبنای ۳ است؛ اگر تعداد ۰‌ها فرد و تعداد ۱‌ها زوج باشد، 
+    $a_{n}$
+    را بیابید.
+
+    \problemsolution{
+        برای هر عدد(۰ و ۱ و ۲) یک تابع مولد نمایی در نظر می‌گیریم:\\
+        برای ۰ که باید فرد بار آمده باشد:\\
+        \begin{center}
+            $G_{1}(x)=\sum\limits_{n=0}^{+\infty} \frac{x^{2n+1}}{(2n+1)!} 
+            = \frac{e^{x} - e^{-x}}{2}$
+        \end{center}
+        برای ۱ که باید زوج بار آمده باشند:\\
+        \begin{center}
+            $G_{2}(x)=\sum\limits_{n=0}^{+\infty} \frac{x^{2n}}{(2n)!}
+            = \frac{e^{x} + e^{-x}}{2}$
+        \end{center}           
+        برای ۲ که محدودیتی ندارد:\\
+        \begin{center}
+            $G_{3}(x)=\sum\limits_{n=0}^{+\infty} \frac{x^{n}}{(n)!}
+            = e^{x}$
+        \end{center}        
+        تابع مولد نهایی برابر است با:\\
+        \begin{center}
+        $G_{1}(x)G_{2}(x)G_{3}(x) = (\frac{e^{x} - e^{-x}}{2})(\frac{e^{x} + e^{-x}}{2})(e^{x}) = 
+        \frac{1}{4}(e^{3x} - e^{x}) = 
+        \sum\limits_{n=0}^{+\infty} (3^{n} - (-1)^{n}) \frac{x^{n}}{n!}$	
+        \end{center}
+        بنابراین پاسخ نهایی برابر خواهد بود با: 
+        \begin{center}
+        $a_{n} = 3^{n} - (-1)^{n}$
+        \end{center}
+    }
+\end{problem}

@@ -60,6 +60,7 @@
     \newpage
     \thispagestyle{empty}
     \refstepcounter{chapter}
+    \rhead{#2}
     
     \begin{tikzpicture}[remember picture,overlay]
         \node at (current page.north west) {
@@ -93,6 +94,7 @@
 % Section styling
 %--------------------------------------------------------------------------
 \newcommand{\SECTION}[1]{
+    \lhead{#1}
     \section*{\color{sectionblue}{#1}}
     \vspace{-12mm}
     {\textcolor{sectionblue}{\noindent\rule{\textwidth}{0.8pt}}}
