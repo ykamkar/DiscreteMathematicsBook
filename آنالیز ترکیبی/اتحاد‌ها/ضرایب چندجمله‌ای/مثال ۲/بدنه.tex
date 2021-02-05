@@ -1,0 +1,73 @@
+\begin{problem}
+  اثبات کنید:
+  \begin{enumerate}
+    \item 
+    اگر 
+    $n$
+    عددی صحیح و نامنفی باشد:
+    \begin{center}
+      $\sum\limits_{k=0}^n \binom{n}{k} = 2^n$
+    \end{center}
+
+    \problemsolution{
+      با توجه به برقرار بودن شرط قضیه ضرایب دو جمله‌ای، از آن استفاده می‌کنیم:
+      \begin{center}
+        $2^n = (1+1)^n = \sum\limits_{k=0}^{n} \binom{n}{k} 1^k 1^{n-k} = \sum\limits_{k=0}^{n} \binom{k}{n}$
+      \end{center}
+    }
+
+    \item 
+    اگر
+    $n$
+    عددی صحیح و مثبت باشد:
+    \begin{center}
+      $\sum\limits_{k=0}^n (-1)^k \binom{n}{k} = 0$
+    \end{center}
+
+    \problemsolution{
+      با توجه به برقرار بودن شرط قضیه ضرایب دو جمله‌ای، از آن استفاده می‌کنیم:
+      \begin{center}
+        $0 = 0^n = ((-1)+1)^n = \sum\limits_{k=0}^{n} \binom{n}{k} (-1)^k 1^{n-k} = \sum\limits_{k=0}^{n} \binom{n}{k} (-1)^k$
+      \end{center}
+    }
+
+    \item 
+    اگر
+    $n$
+    عددی صحیح و مثبت باشد:
+    \begin{center}
+      $\sum\limits_{k=0}^n \binom{2n}{2k} = \sum\limits_{k=1}^n \binom{2n}{2k-1}$
+    \end{center}
+
+    \problemsolution{
+      با توجه به برقرار بودن شرط حکم قسمت دوم همین سوال، از آن استفاده می‌کنیم:
+      \begin{center}
+        $\sum\limits_{k=0}^{2n} \binom{2n}{k} (-1)^k = 0$
+
+        $\sum\limits_{k=0}^{n} \binom{2n}{2k} (-1)^k + \sum\limits_{k=1}^{n} \binom{2n}{2k-1} (-1)^k = 0$
+
+        $\sum\limits_{k=0}^{n} \binom{2n}{2k} + \sum\limits_{k=1}^{n} \binom{2n}{2k-1} (-1) = 0$
+
+        $\sum\limits_{k=0}^{n} \binom{2n}{2k} - \sum\limits_{k=1}^{n} \binom{2n}{2k-1} = 0$
+
+        $\sum\limits_{k=0}^{n} \binom{2n}{2k} = \sum\limits_{k=1}^{n} \binom{2n}{2k-1}$
+      \end{center}
+    }
+
+    \item 
+    اگر
+    $n$
+    عددی صحیح و نامنفی باشد:
+    \begin{center}
+      $\sum\limits_{k=0}^n 2^k \binom{n}{k} = 3^n$
+    \end{center}
+
+    \problemsolution{
+      با توجه به برقرار بودن شرط قضیه ضرایب دو جمله‌ای، از آن استفاده می‌کنیم:
+      \begin{center}
+        $3^n = (1+2)^n = \sum\limits_{k=0}^n \binom{n}{k} 1^{n-k} 2^k = \sum\limits_{k=0}^n \binom{n}{k} 2^k$
+      \end{center}
+    }
+
+  \end{enumerate}
+\end{problem}

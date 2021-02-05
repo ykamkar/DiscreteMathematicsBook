@@ -1,0 +1,29 @@
+\DMMproblem
+اتحاد زیر را ثابت کنید.
+\begin{align*}
+\sum_{i=k}^{n} {\binom{i}{k}} = \binom{n+1}{k+1}
+\end{align*}
+  
+\DMMproblemWsolution{
+  \[A=\sum_{i=k}^{n} {\binom{i}{k}}\]
+  \[=\sum_{i=k}^{n} {\binom{i+1}{k+1}-\binom{i}{k+1}}\]
+  \[=\sum_{i=k}^{n} {\binom{i+1}{k+1}}-\sum_{i=k}^{n} {\binom{i}{k+1}}\]
+  \[=\binom{n+1}{k+1}+\sum_{i=k}^{n-1} {\binom{i+1}{k+1}}-(0+\sum_{i=k+1}^{n} {\binom{i}{k+1}})\]
+  \[=\binom{n+1}{k+1}+\sum_{i=k}^{n-1} {\binom{i+1}{k+1}}-\sum_{i=k}^{n-1} {\binom{i+1}{k+1}}=\binom{n+1}{k+1}\]
+}
+ 
+\NOTE{باید فرمول و اتحادهای مورد استفاده و منبع معتبر آن ‌ذکر شود‌. به عنوان منبع اسم اتحاد هم کافی است.}
+
+\DMMproblemsolution{
+  طبق اتحاد پاسکال داریم:
+
+  $$ \binom{n}{k}+\binom{n}{k+1}=\binom{n+1}{k+1}$$
+
+  پس طبق این اتحاد می‌توان نوشت:
+
+  \[\sum_{i=k}^{n} {\binom{i}{k}}\]
+  \[=\sum_{i=k}^{n} {\binom{i+1}{k+1}-\binom{i}{k+1}}\]
+  \[=\sum_{i=k}^{n} {\binom{i+1}{k+1}}-\sum_{i=k}^{n} {\binom{i}{k+1}}\]
+  \[=\binom{n+1}{k+1}+\sum_{i=k}^{n-1} {\binom{i+1}{k+1}}-(0+\sum_{i=k+1}^{n} {\binom{i}{k+1}})\]
+  \[=\binom{n+1}{k+1}+\sum_{i=k}^{n-1} {\binom{i+1}{k+1}}-\sum_{i=k}^{n-1} {\binom{i+1}{k+1}}=\binom{n+1}{k+1}\]  
+}
