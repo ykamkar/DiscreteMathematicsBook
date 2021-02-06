@@ -35,6 +35,8 @@
     \end{center}
 }
 
+\renewcommand{\theenumi}{\Alph{enumi}}
+
 
 % Colors
 %--------------------------------------------------------------------------
@@ -267,4 +269,13 @@
 % DMMproblem solution
 \newcommand{\DMMproblemsolution}[2][پاسخ.]{
     \Eproblemsolution[#1]{#2}
+}
+
+% exercise styling
+%--------------------------------------------------------------------------
+\newcounter{exercise}[chapter]
+
+\newcommand{\exercise}[0]{
+
+    \refstepcounter{exercise}\par\medskip{~\theexercise}.
 }
