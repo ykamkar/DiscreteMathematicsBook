@@ -127,16 +127,18 @@ or
 
     \centerimage{.5}{pic.png}
 
-    سفر از $A$ به $D$ را به سه بخش سفر از $A$ به $B$، از $B$ به $C$ و از $C$ به $D$
-    تقسیم می‌کنیم و طبق اصل ضرب، می‌توان نوشت ($N(x,y)$ را تعداد مسیر‌های سفر از $x$ به $y$ درنظر بگیرید):
-    $$N(A,D) = N(A,B) \times N(B,C) \times N(C,D)$$
-    $$= 4 \times 2 \times 3 = 24$$
+    \problemsolution{
+        سفر از $A$ به $D$ را به سه بخش سفر از $A$ به $B$، از $B$ به $C$ و از $C$ به $D$
+        تقسیم می‌کنیم و طبق اصل ضرب، می‌توان نوشت ($N(x,y)$ را تعداد مسیر‌های سفر از $x$ به $y$ درنظر بگیرید):
+        $$N(A,D) = N(A,B) \times N(B,C) \times N(C,D)$$
+        $$= 4 \times 2 \times 3 = 24$$
+    }
 \end{problem}
 ```
 
 ![alt text](./ReadmeContents/problem_pic.png)
 
-Also you can get a name the problem :
+Also you can get a name to the problem :
 
 ```latex
 \begin{problem}[حالات مختلف توزیع اشیا]
