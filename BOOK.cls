@@ -85,7 +85,7 @@
     #3
 
     \newpage
-
+    \lhead{فهرست مطالب}
     \startlist{toc}
     {\huge فهرست مطالب}
     \printlist{toc}{}
@@ -142,7 +142,7 @@
     
 }
 
-% Definition styling
+% theorem(fact) styling
 %--------------------------------------------------------------------------
 \newenvironment{fact}
 {\begin{tcolorbox}[
