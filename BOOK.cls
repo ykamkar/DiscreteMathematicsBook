@@ -43,10 +43,10 @@
 \RequirePackage{xcolor}
 \definecolor{sectionblue}{RGB}{70,130,180}
 \definecolor{subsectionblue}{RGB}{100,160,200}
-\definecolor{storange}{RGB}{255,138,88}
+\definecolor{extraorange}{RGB}{255,138,88}
 \definecolor{factblue}{RGB}{23,74,117}
 \definecolor{definitiongreen}{RGB}{21,122,81}
-\definecolor{tsyellow}{RGB}{255,185,88}
+\definecolor{extrayellow}{RGB}{255,185,88}
 \definecolor{tsgrey}{RGB}{200,200,200}
 \definecolor{solutiongreen}{rgb}{0.1,0.7,0.1}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -142,9 +142,9 @@
     
 }
 
-% theorem(fact) styling
+% theorem styling
 %--------------------------------------------------------------------------
-\newenvironment{fact}
+\newenvironment{theorem}
 {\begin{tcolorbox}[
     enhanced jigsaw,
     breakable,
@@ -154,9 +154,9 @@
     \hspace{3mm}}
 {\end{tcolorbox}}
 
-\newenvironment{theorem}
-{\begin{fact}}
-{\end{fact}}
+\newenvironment{fact}
+{\begin{theorem}}
+{\end{theorem}}
 
 % problem styling
 %--------------------------------------------------------------------------
@@ -183,7 +183,7 @@
 }
 
 % problem solution
-\newcommand{\problemsolution}[2][پاسخ.]{
+\newcommand{\solution}[2][پاسخ.]{
     
     \problemsolutionmark[#1]
     
@@ -191,6 +191,10 @@
         \hspace{3mm}
         #2
     \end{itshape}
+}
+
+\newcommand{\problemsolution}[2][پاسخ.]{
+    \solution[#1]{#2}
 }
 
 % end problem
@@ -219,7 +223,7 @@
 }
 
 % DMMproblem wrong solution
-\newcommand{\DMMproblemWsolution}[2][پاسخ غلط.]{
+\newcommand{\Ewrongsolution}[2][پاسخ غلط.]{
     \begin{tcolorbox}[
         enhanced jigsaw,
         breakable,
@@ -239,6 +243,10 @@
     \end{tcolorbox}
 }
 
+\newcommand{\DMMproblemWsolution}[2][پاسخ غلط.]{
+    \Ewrongsolution[#1]{#2}
+}
+
 % end problem solution mark
 \newcommand{\Eproblemsolutionmark}[1][پاسخ.]{
     \vspace{-3mm}\hspace{-5.5mm}\colorbox{green!10}{\scriptsize\color{solutiongreen}{#1}}
@@ -246,7 +254,7 @@
 }
 
 % end problem solution
-\newcommand{\Eproblemsolution}[2][پاسخ.]{
+\newcommand{\Esolution}[2][پاسخ.]{
     \begin{tcolorbox}[
         enhanced jigsaw,
         breakable,
@@ -266,6 +274,10 @@
     \end{tcolorbox}
 }
 
+\newcommand{\Eproblemsolution}[2][پاسخ.]{
+    \Esolution[#1]{#2}
+}
+
 % DMMproblem solution
 \newcommand{\DMMproblemsolution}[2][پاسخ.]{
     \Eproblemsolution[#1]{#2}
@@ -279,3 +291,24 @@
 
     \refstepcounter{exercise}\par\medskip{~\theexercise}.
 }
+
+% extra styling
+%--------------------------------------------------------------------------
+\newenvironment{extra}[2][images/mindset3.png]
+{\begin{tcolorbox}[
+    enhanced jigsaw,
+    breakable,
+    pad at break*=1mm,
+    colback=extrayellow!25,
+    colframe=extraorange!65]
+    \begin{flushleft}
+        \vspace{-1.1cm}
+        \hspace*{-1.5in}\includegraphics[width=0.15\linewidth]{#1}
+    \end{flushleft}
+    \begin{center}
+        \vspace{-0.8cm}
+        \textbf{\color{extraorange}{#2}}
+    \end{center}
+    \hspace{3mm}
+}
+{\end{tcolorbox}}

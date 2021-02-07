@@ -118,7 +118,7 @@ or
 
 <!-- ----------------------------------------------------------------------- -->
 
-* `problem` and `\problemsolution`
+* `problem` and `solution`
 
 ```latex
 \begin{problem}
@@ -127,7 +127,7 @@ or
 
     \centerimage{.5}{pic.png}
 
-    \problemsolution{
+    \solution{
         سفر از $A$ به $D$ را به سه بخش سفر از $A$ به $B$، از $B$ به $C$ و از $C$ به $D$
         تقسیم می‌کنیم و طبق اصل ضرب، می‌توان نوشت ($N(x,y)$ را تعداد مسیر‌های سفر از $x$ به $y$ درنظر بگیرید):
         $$N(A,D) = N(A,B) \times N(B,C) \times N(C,D)$$
@@ -146,11 +146,19 @@ Also you can get a name to the problem :
 \end{problem}
 ```
 
+You can change the label of solution like this:
+```latex
+\solution[new label]{
+    ...
+}
+
+```
+
 ![alt text](./ReadmeContents/namedproblem_pic.png)
 
 <!-- ----------------------------------------------------------------------- -->
 
-* `Eproblem` or `DMMproblem`
+* `Eproblem`
 
 ```latex
 \Eproblem
@@ -163,10 +171,10 @@ Also you can get a name to the problem :
 
 <!-- ----------------------------------------------------------------------- -->
 
-* `Eproblemsolution` or `DMMproblemsolution`
+* `Esolution`
 
 ```latex
-\Eproblemsolution{
+\Esolution{
     طبق جدول
     Functions Generating Useful
     از کتاب Rosen
@@ -182,14 +190,22 @@ Also you can get a name to the problem :
 
 ```
 
+You can change the label of solution like this:
+```latex
+\Esolution[new label]{
+    ...
+}
+
+```
+
 ![alt text](./ReadmeContents/Eproblemsolution_pic.png)
 
 <!-- ----------------------------------------------------------------------- -->
 
-* `DMMproblemWsolution`
+* `Ewrongsolution`
 
 ```latex
-\DMMproblemWsolution{
+\Ewrongsolution{
     طبق بسط دوجمله‌ای داریم:    
         \begin{align*}
         \frac{1}{(1-4x)^5}=\sum\limits_{k=0}^{\infty} \binom{k+4}{k}  4 ^ k  x^ k              
@@ -204,6 +220,14 @@ Also you can get a name to the problem :
     \begin{align*}
     \longrightarrow a_{12} = \binom{16}{12} 4 ^ {12}
     \end{align*}
+}
+
+```
+
+You can change the label of solution like this:
+```latex
+\Ewrongsolution[new label]{
+    ...
 }
 
 ```
@@ -224,3 +248,22 @@ Also you can get a name to the problem :
 
 ![alt text](./ReadmeContents/exercise_pic.png)
 
+<!-- ----------------------------------------------------------------------- -->
+
+* `extra`
+
+```latex
+\begin{extra}{تاریخچه پیدایش اصل شمول و عدم شمول}
+    اصل شمول و عدم شمول از یه جایی شروع شد که ...
+\end{extra}
+```
+
+![alt text](./ReadmeContents/extra_pic.png)
+
+Also you can change the top left picture just like this:
+
+```latex
+\begin{extra}[somewhere/newpic.png]{تاریخچه پیدایش اصل شمول و عدم شمول}
+    اصل شمول و عدم شمول از یه جایی شروع شد که ...
+\end{extra}
+```
