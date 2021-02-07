@@ -89,7 +89,7 @@ You can use this template for your own purposes or add content to this book. To 
 
 <!-- ----------------------------------------------------------------------- -->
 
-* `theorem` or `fact`
+* `theorem`
 
 ```latex
 \begin{theorem}
