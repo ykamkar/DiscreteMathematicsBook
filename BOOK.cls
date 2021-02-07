@@ -294,7 +294,7 @@
 
 % extra styling
 %--------------------------------------------------------------------------
-\newenvironment{extra}[2][images/mindset3.png]
+\newenvironment{extra}[2][images/mindset.png]
 {\begin{tcolorbox}[
     enhanced jigsaw,
     breakable,
