@@ -14,6 +14,7 @@
 \usepackage{amsfonts}
 \usepackage{tikz}
 \usepackage{titletoc}
+\usepackage{import}
 
 \RequirePackage[extrafootnotefeatures]{xepersian}
 \settextfont[
