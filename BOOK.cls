@@ -1,3 +1,13 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%                                                                  %%%%%%
+%%%%%%               Provided by: Behzad Shayegh Borujeni               %%%%%%
+%%%%%%                  http://behzadshayegh.github.io                  %%%%%%
+%%%%%%                                                                  %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \LoadClassWithOptions{article}
 
 \setlength{\parskip}{5pt plus 1pt}
@@ -7,7 +17,7 @@
 \RequirePackage{graphicx}
 \usepackage{enumitem}
 \usepackage[most]{tcolorbox}
-\usepackage{indentfirst}
+\setlength{\parindent}{4em}
 \usetikzlibrary{calc}
 \usepackage{subfiles}
 \usepackage{fancyhdr}
@@ -15,6 +25,8 @@
 \usepackage{tikz}
 \usepackage{titletoc}
 \usepackage{import}
+\usepackage{hyperref}
+\usepackage{parskip}
 
 \RequirePackage[extrafootnotefeatures]{xepersian}
 \settextfont[
@@ -38,7 +50,6 @@
 
 \renewcommand{\theenumi}{\Alph{enumi}}
 
-
 % Colors
 %--------------------------------------------------------------------------
 \RequirePackage{xcolor}
@@ -53,6 +64,16 @@
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+% Chapter styling
+%--------------------------------------------------------------------------
+\newcommand{\p}[0]{
+    
+    \noindent
+    \vspace{1mm}
+    \hspace{3mm}
+}
 
 
 % Chapter styling
@@ -82,7 +103,7 @@
     {\Huge #2}
     
     \vspace{1.5cm}
-
+    \p
     #3
 
     \newpage
@@ -102,7 +123,6 @@
     \vspace{-12mm}
     {\textcolor{sectionblue}{\noindent\rule{\textwidth}{0.8pt}}}
     \addcontentsline{toc}{section}{#1}
-
 }
 
 % SubSection styling
@@ -112,7 +132,6 @@
     \vspace{-12mm}
     {\textcolor{subsectionblue}{\noindent\rule{0.4\textwidth}{0.8pt}}}
     \addcontentsline{toc}{subsection}{#1}
-
 }
 
 % Definition styling
@@ -125,8 +144,7 @@
     colback=yellow!10!white,
     boxrule=0pt,
     frame hidden,
-    borderline east={1.5mm}{-2mm}{definitiongreen}]
-    \hspace{3mm}}
+    borderline east={1.5mm}{-2mm}{definitiongreen}]}
 {\end{tcolorbox}}
 
 % focused
@@ -136,11 +154,9 @@
 % Note
 %--------------------------------------------------------------------------
 \newcommand{\NOTE}[1]{
-
-    \vspace{3mm}
+    \p
     {\hspace{-1.5cm}{\includegraphics[width=5mm]{./images/notemark.png}}}
     \hspace{6.5mm} #1
-    
 }
 
 % theorem styling
@@ -151,8 +167,7 @@
     breakable,
     pad at break*=1mm,
     colback=factblue!5,
-    colframe=factblue!50]
-    \hspace{3mm}}
+    colframe=factblue!50]}
 {\end{tcolorbox}}
 
 \newenvironment{fact}
@@ -175,7 +190,7 @@
     \hspace{-6.5mm}\colorbox{black!10}{\refstepcounter{problem}\par\medskip{~\theproblem}}
     \hspace{3mm}{\scriptsize\textbf{\textcolor{gray}{#1}}}
 
-\vspace{1mm}\hspace{3mm}}
+\vspace{1mm}}
 {\end{tcolorbox}}
 
 % problem solution mark
@@ -189,7 +204,6 @@
     \problemsolutionmark[#1]
     
     \begin{itshape}
-        \hspace{3mm}
         #2
     \end{itshape}
 }
@@ -237,7 +251,6 @@
         \DMMproblemWsolutionmark[#1]
         
         \begin{itshape}
-            \hspace{3mm}
             #2
         \end{itshape}
 
@@ -268,7 +281,6 @@
         \Eproblemsolutionmark[#1]
         
         \begin{itshape}
-            \hspace{3mm}
             #2
         \end{itshape}
 
@@ -307,9 +319,19 @@
         \hspace*{-1.5in}\includegraphics[width=0.15\linewidth]{#1}
     \end{flushleft}
     \begin{center}
-        \vspace{-0.8cm}
+        \vspace{-0.5cm}
         \textbf{\color{extraorange}{#2}}
+        \vspace{0.3cm}
     \end{center}
-    \hspace{3mm}
 }
 {\end{tcolorbox}}
+
+% English block
+%--------------------------------------------------------------------------
+\newcommand{\englishblock}[1]{
+    \begin{flushleft}
+        \lr{
+            #1
+        }
+    \end{flushleft}
+}

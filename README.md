@@ -267,3 +267,24 @@ Also you can change the top left picture just like this:
     اصل شمول و عدم شمول از یه جایی شروع شد که ...
 \end{extra}
 ```
+
+<!-- ----------------------------------------------------------------------- -->
+
+* `englishblock`
+
+```latex
+\englishblock{
+    Some Text In English.
+}
+```
+
+<!-- ----------------------------------------------------------------------- -->
+
+* `p`
+
+It provides paragraphs indentations.
+
+```latex
+\p
+این یک پاراگراف جدید است.
+```
