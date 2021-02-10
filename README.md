@@ -2,6 +2,8 @@
 
 You can use this template for your own purposes or add content to this book. To use this template, you will have the following commands.
 
+-> `Xelatex 2020` used but `2019` works well too.
+
 <!-- ----------------------------------------------------------------------- -->
 
 * `CHAPTER`
