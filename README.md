@@ -21,7 +21,6 @@ It provides paragraphs indentations.
 
 ```latex
 \CHAPTER[./images/combinations.jpg]{آنالیز ترکیبی}{
-    \p
     آنچه در این فصل مورد بحث قرار خواهد گرفت،
     مبحث شمارش است که به محاسبه‌ی تعداد حالات رخداد یک پدیده،
     بدون بررسی تک تک حالات می‌پردازد.
