@@ -6,10 +6,22 @@ You can use this template for your own purposes or add content to this book. To 
 
 <!-- ----------------------------------------------------------------------- -->
 
+* `p`
+
+It provides paragraphs indentations.
+
+```latex
+\p
+این یک پاراگراف جدید است.
+```
+
+<!-- ----------------------------------------------------------------------- -->
+
 * `CHAPTER`
 
 ```latex
 \CHAPTER[./images/combinations.jpg]{آنالیز ترکیبی}{
+    \p
     آنچه در این فصل مورد بحث قرار خواهد گرفت،
     مبحث شمارش است که به محاسبه‌ی تعداد حالات رخداد یک پدیده،
     بدون بررسی تک تک حالات می‌پردازد.
@@ -50,6 +62,7 @@ You can use this template for your own purposes or add content to this book. To 
 
 ```latex
 \begin{definition}
+    \p
     \focused{اصل ضرب:}
     اگر بتوان فرایندی را به دو قسمت متوالی تقسیم کرد و
     $n$
@@ -70,6 +83,7 @@ You can use this template for your own purposes or add content to this book. To 
 
 ```latex
 \begin{definition}
+    \p
     به هر روش قرار گرفتن چند شیء در کنار یک‌دیگر یک 
     \focused{جایگشت}
     از این اشیاء گفته می‌شود.
@@ -95,6 +109,7 @@ You can use this template for your own purposes or add content to this book. To 
 
 ```latex
 \begin{theorem}
+    \p
     \focused{تعمیم اصل جمع:}
     اگر بتوان فرایندی را از 
     $k$
@@ -124,12 +139,14 @@ or
 
 ```latex
 \begin{problem}
+    \p
     چهار شهر $A, B, C, D$ را متصور شوید که از $A$ به $B$ چهار مسیر، از $B$ به $C$ دو مسیر و از $C$ به $D$
     سه مسیر وجود دارد. چند مسیر متفاوت برای سفر از $A$ به $D$ وجود دارد؟
 
     \centerimage{.5}{pic.png}
 
     \solution{
+        \p
         سفر از $A$ به $D$ را به سه بخش سفر از $A$ به $B$، از $B$ به $C$ و از $C$ به $D$
         تقسیم می‌کنیم و طبق اصل ضرب، می‌توان نوشت ($N(x,y)$ را تعداد مسیر‌های سفر از $x$ به $y$ درنظر بگیرید):
         $$N(A,D) = N(A,B) \times N(B,C) \times N(C,D)$$
@@ -164,7 +181,7 @@ You can change the label of solution like this:
 
 ```latex
 \Eproblem
-
+\p
 سه مهره رخ متمایز و صفحه شطرنجی $8\times8$ داریم. به چند روش می‌توان این سه مهره را در سه خانه از این صفحه قرار داد به طوری که حداقل یک مهره وجود داشته باشد که توسط هیچ مهره‌ای تهدید نمی‌شود؟
 
 ```
@@ -177,6 +194,7 @@ You can change the label of solution like this:
 
 ```latex
 \Esolution{
+    \p
     طبق جدول
     Functions Generating Useful
     از کتاب Rosen
@@ -185,7 +203,6 @@ You can change the label of solution like this:
     بنابراین در این سوال داریم:
     $$(1 - 4x) ^ {-5} =
     \sum_{k = 0}^{\infty} \binom{5 + k - 1}{k} (4x)^k $$
-
     جمله $x^{12}$ به ازای مقدار $k = 12$ ساخته می‌شود. بنابراین جواب برابر خواهد بود با: 
     $$\binom{16}{12} (4)^{12}$$
 }
@@ -208,6 +225,7 @@ You can change the label of solution like this:
 
 ```latex
 \Ewrongsolution{
+    \p
     طبق بسط دوجمله‌ای داریم:    
         \begin{align*}
         \frac{1}{(1-4x)^5}=\sum\limits_{k=0}^{\infty} \binom{k+4}{k}  4 ^ k  x^ k              
@@ -256,6 +274,7 @@ You can change the label of solution like this:
 
 ```latex
 \begin{extra}{تاریخچه پیدایش اصل شمول و عدم شمول}
+    \p
     اصل شمول و عدم شمول از یه جایی شروع شد که ...
 \end{extra}
 ```
@@ -266,6 +285,7 @@ Also you can change the top left picture just like this:
 
 ```latex
 \begin{extra}[somewhere/newpic.png]{تاریخچه پیدایش اصل شمول و عدم شمول}
+    \p
     اصل شمول و عدم شمول از یه جایی شروع شد که ...
 \end{extra}
 ```
@@ -274,19 +294,10 @@ Also you can change the top left picture just like this:
 
 * `englishblock`
 
+Use it to write left to write.
+
 ```latex
 \englishblock{
     Some Text In English.
 }
-```
-
-<!-- ----------------------------------------------------------------------- -->
-
-* `p`
-
-It provides paragraphs indentations.
-
-```latex
-\p
-این یک پاراگراف جدید است.
 ```
