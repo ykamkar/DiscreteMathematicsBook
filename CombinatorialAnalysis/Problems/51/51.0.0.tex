@@ -1,0 +1,21 @@
+\documentclass[12pt,onecolumn,a4paper]{article}
+\usepackage{epsfig,graphicx,subfigure,amsthm,amsmath,enumitem}
+\usepackage{color,xcolor}
+\usepackage{xepersian}
+\settextfont[Path={./fonts/}, BoldFont={XB NiloofarBd.ttf}, BoldItalicFont={XB NiloofarBdIt.ttf}, ItalicFont={XB NiloofarIt.ttf}]{XB Niloofar.ttf}
+
+\begin{document}
+برای حل این سوال از دوگانه‌شماری استفاده می‌کنیم.
+
+سمت چپ: 
+
+یک گروه $n+m$ از افراد داریم که $n$ نفر کلاه قرمز و $m$ کلاه آبی دارند. می‌خواهیم یک زیر مجموعه $n$ نفره از این افراد انتخاب کنیم.
+
+
+سمت راست:
+
+ابتدا $k$ نفری که قرار است کلاه آبی داشته باشند را انتخاب می‌کنیم.($\binom{m}{k}$)
+سپس $n-k$ نفر باقی‌مانده را از کلاه قرمزها انتخاب می‌کنیم.( توجه کنید که
+$ \binom{n}{n-k} = \binom{n}{k}$)
+با جمع طرف راست برای تمام مقادیر ممکن $k$ متوجه می‌شویم که با طرف چپ برابری می‌کند و حکم مسئله ثابت می‌شود.
+\end{document}
