@@ -1,4 +1,34 @@
 \begin{problem}
-    \p
-   این بخش هنوز آماده نشده است.
+دنباله‌ای بنویسید که اعضایش فقط از قوانین زیر بدست بیاید.
+	\p
+	الف) عضو اول آن
+$a_1$
+	است.
+	\p
+	ب)
+$\forall k \in B : (kq) \in B$
+    \problemsolution{
+    \begin{center}
+        \p
+        $a_1 = a_1$
+        \p
+        $a_2 = a_1q$
+        \p
+        $a_3 = a_2q = (a_1q)q = a_1q^2$
+        \p
+        $a_4 = a_1q^4$
+        \p
+        $\vdots$
+        \p
+        $a_n = a_1q^{n-1}$
+        \p
+        $\Downarrow$
+        \p
+        $S_n = a_1 + a_2 + \ldots + a_n = a_1(1 + q + q^2 + \ldots + q^{n-1})$
+        \p
+        با استفاده از اتحاد چاق و لاغر داریم:
+        \p
+        $Sn = \frac{a_1(1 - q^n}{1 - q}, (q \neq 1)$
+    \end{center}
+    }
 \end{problem}
