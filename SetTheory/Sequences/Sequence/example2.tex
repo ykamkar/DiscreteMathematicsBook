@@ -4,40 +4,31 @@
 $S$
 به صورت زیر مشخص شده است. جمله عمومی آن را به دست آورید.
 	\p
-الف)
+	\begin{enumerate}
+\item
 $1 \in S$
 	\p
-ب)
+\item
 $\forall k \in \mathbb{N} : k \in S \Rightarrow (k + 4) \in S$
 	\p
-ج)هیچ عضوی در
+\item
+هیچ عضوی در
 $S$
-وجود ندارد که از قانون (الف) یا (ب) به دست نیامده باشد.
+وجود ندارد که از قانون (آ) یا (ب) به دست نیامده باشد.
+	\p    
+	
     \problemsolution{
         \p
-       \begin{center}
-       		$1 \in S \Rightarrow 5 \in S \Rightarrow 9 \in S \Rightarrow \ldots$
-       	\p
-       	$S = \{1, 5, 9, 13, 17, \ldots\}$ 
-        \end{center}
-        \p
+       		$$1 \in S \Rightarrow 5 \in S \Rightarrow 9 \in S \Rightarrow \ldots$$
+       	$$S = \{1, 5, 9, 13, 17, \ldots\}$$
        جمله عمومی:
-       \p
-       \begin{center}
-       $a_1 = 1$
-       \p
-       $a_2 = a_1 + 4$
-       \p
-       $a_3 = a_2 + 4$
-       \p
-       $\vdots$ 
-       \p
-       $a_n = a_{n-1} + 4$
-       \p
-       $\Downarrow$
-       \p
-       $a_n = 1 + 4(m - 1) = 4n - 3$
-       \p
-       \end{center}
+       $$a_1 = 1$$
+       $$a_2 = a_1 + 4$$
+       $$a_3 = a_2 + 4$$
+       $$\vdots$$
+       $$a_n = a_{n-1} + 4$$
+       $$\Downarrow$$
+       $$a_n = 1 + 4(n - 1) = 4n - 3$$
         }
+        \end{enumerate}
 \end{problem}
